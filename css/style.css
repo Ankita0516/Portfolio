@@ -1,46 +1,55 @@
 /*general-css*/
+html{ scroll-behavior: smooth; }
 body{ margin: 0; padding: 0; width: 100%; height: 100%; font-family: 'Avenir-Next-Regular'; }
-h1{ font-size: 40px; line-height: 44px; color: #484848; font-family: "Libre Baskerville"; font-weight: 400; margin-bottom: 20px }
-h2{ font-size: 30px; line-height: 44px; color: #484848; font-family: "Libre Baskerville"; font-weight: 400; margin-bottom: 20px }
-h3{ font-size: 20px; line-height: 24px; color: #484848; font-family: 'Avenir-Next-Regular'; font-weight: 500; margin-bottom: 20px }
-h4{ font-size: 18px; line-height: 22px; color: #484848; font-family: 'Avenir-Next-Regular'; font-weight: 500; margin-bottom: 20px }
-h5{ font-size: 16px; line-height: 20px; color: #484848; font-family: 'AvenirNext-DemiBold'; font-weight: 500; margin-bottom: 20px }
-p{ font-size: 14px; color: #484848; line-height: 18px; margin-bottom: 20px}
+h1{ font-size: 40px; line-height: 44px; color: #484848; font-family: "Libre Baskerville"; font-weight: 400; margin-bottom: 15px }
+h2{ font-size: 30px; line-height: 34px; color: #484848; font-family: "Libre Baskerville"; font-weight: 400; margin-bottom: 15px }
+h3{ font-size: 22px; line-height: 26px; color: #484848; font-family: 'Avenir-Next-Regular'; font-weight: 500; margin-bottom: 15px }
+h4{ font-size: 20px; line-height: 24px; color: #484848; font-family: 'Avenir-Next-Regular'; font-weight: 500; margin-bottom: 15px }
+h5{ font-size: 16px; line-height: 20px; color: #484848; font-family: 'AvenirNext-DemiBold'; font-weight: 500; margin-bottom: 15px }
+p{ font-size: 16px; color: #484848; line-height: 20px; margin-bottom: 20px}
 img{ width: 100% }
 h1 em,h2 em{ height:7px; width:7px; background-color: #283c86; border-radius: 50%; display: inline-block; margin-left: 5px }
-.blue-btn{border: 2px solid #283c86; background: #283c86; color: #fff; padding: 5px 50px; font-size: 14px; line-height: 18px; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; }
+.blue-btn{ font-family: 'AvenirNext-DemiBold'; border: 2px solid #283c86; background: #283c86; color: #fff; padding: 5px 50px; font-size: 14px; line-height: 18px; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; }
 .blue-btn:hover{ background: #fff; color: #283c86; text-decoration: none; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; }
-.border-btn{border: 2px solid #283c86; background: #fff; color: #283c86; padding: 5px 50px; font-size: 14px; line-height: 18px; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; }
+.border-btn{ font-family: 'AvenirNext-DemiBold'; border: 2px solid #283c86; background: #fff; color: #283c86; padding: 5px 50px; font-size: 14px; line-height: 18px; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; }
 .border-btn:hover{ background: #283c86; color: #fff; text-decoration: none; transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; }
-.about, .skills, .work{ margin-bottom: 80px }
-.bg{padding:50px 0; background: #f6f6f6; background-repeat: no-repeat; background-size: cover; }
+.bg{padding:65px 0; background: #f6f6f6; background-repeat: no-repeat; background-size: cover; }
 
 /*header-css*/
-header{ height: 55px }
+header{ height: 55px; top: 0; background:#fff; left: 0; right: 0; width: 100%; z-index: 2; border-bottom: 1px solid #e4e2e2; }
+header .desktop-menu{ height: 100% }
 .logo{ display: flex; align-items: center; justify-content: flex-start; height: 100%;  }
 .logo a{ display: inline-block; width: 40px }
 .menu{ display: flex; align-items: center; justify-content: flex-start;  height: 100% }
 .menu .menu-link{ margin: 0; padding: 0}
-.menu .menu-link li{ display: inline-block; padding-right: 70px; font-family: 'Avenir-Next-bold'; line-height: 16px; font-size: 12px; text-transform: uppercase; list-style-type: none; }
+.menu .menu-link li{ display: inline-block; padding-right: 64px; font-family: 'Avenir-Next-bold'; line-height: 16px; font-size: 12px; text-transform: uppercase; list-style-type: none; }
 .menu .menu-link li:last-child{ padding-right: 0 }
 .menu .menu-link li a{ text-decoration: none; color: #414141; letter-spacing: 1px }
+.mobile-menu,.close-menu{ display: none; }
+.mobile-menu .menu-link{display: none; background: #f6f6f6; position: absolute; top: 55px; left: 0; right: 0; z-index: 2; padding: 15px 30px; width: 100%; height: 100vh;  }
+.mobile-menu .menu-link li{ list-style-type: none; text-transform: uppercase; font-family: 'AvenirNext-DemiBold'; font-size: 14px; line-height: 18px; padding: 20px 0}
+.mobile-menu .menu-link li a{ color: #484848 }
 
 /*banner-css*/
-.banner{ margin-bottom: 80px; height: 500px; position: relative; }
-.banner .banner-img{ position: absolute;left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; background: #f6f6f6; background-repeat: no-repeat; background-size: cover;  }
+.banner{ height: 500px; position: relative; }
+.banner .banner-img{ position: absolute;left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; background: url('../images/banner-01.png') ;background-repeat: no-repeat; background-size: cover; background-position: 100% center;  }
 .banner .container{ display: flex; align-items: center;height: 100%; }
 .banner .banner-text{display: block;max-width: 100%; width: 450px; background: #fff; padding: 50px;  box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1); }
 .banner .banner-text h4{ font-weight: 600 }
 .banner .profile{ padding: 0; background: #f6f6f6; background-size: cover; }
-.banner a{ margin-right: 12px; display: inline-block; box-sizing: border-box; font-family: 'AvenirNext-DemiBold' }
-.banner a.border-btn{ margin-right: 0 }
+.banner a, .about a{ margin-right: 12px; display: inline-block;}
+.banner a.border-btn, .about a.border-btn{ margin-right: 0 }
+
 
 /*about-css*/
-.about .first-column{ display: inline-block; vertical-align: top; margin-right: 15px; }
+.about{ padding: 65px 0; }
+.about .first-column{ display: inline-block; vertical-align: top; margin-right: 20px; }
 .about .space{ max-width: 450px }
-.about .first-column .first-img{ margin-bottom: 21px }
+.about .first-column .first-img{ margin-bottom: 20px }
 .about .second-column{ display: inline-block; vertical-align: top; }
 .about .first-img, .about .second-img, .about .third-img{ width: 260px; box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); }
+.about .about-data, .about .picture{ display: flex; align-items: center; justify-content: flex-start; }
+
 
 /*skills-css*/
 .skills h2{ text-align: center; }
@@ -49,27 +58,36 @@ header{ height: 55px }
 .skills ul{ margin: 0 0 0 15px; padding: 0 }
 .skills .list .skills-list{ display: flex;align-items: initial; margin-bottom: 30px }
 .skills .list .experience-list{ display: flex; align-items: center; }
-.skills  ul li{ border: 2px solid #fff; min-width: 135px; text-align: center; display: inline-block; background: #fff; padding: 5px 20px; color: #283c86; font-size: 14px; margin-right: 10px; font-weight: 600; margin-bottom: 20px }
-.skills  ul li:hover{ border: 2px solid #283c86; box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1); }
+.skills  ul li{ transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; border: 2px solid #fff; min-width: 135px; text-align: center; display: inline-block; background: #fff; padding: 5px 20px; color: #283c86; font-size: 14px; margin-right: 8px; font-weight: 600; margin-bottom: 20px }
+.skills  ul li:hover{ transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; border: 2px solid #283c86; box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1); }
 .skills .list .experience-list p{ margin:0; text-align: left; margin: 0 0 0 15px; }
-.skills .list .experience-list a{ padding: 5px 20px; background: #fff; margin-left: 15px; }
-.skills .list .experience-list a:hover{ box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1);  }
+.skills .list .experience-list a{ transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; padding: 5px 20px; background: #fff; margin-left: 15px; }
+.skills .list .experience-list a:hover{ transition: all 0.2s; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -ms-transition: all 0.2s; box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1);  }
 
 /*work-css*/
-.work{ text-align: center; }
+.work{ text-align: center; padding: 65px 0; }
 .work h2{ text-align: center; }
-.work .card{ box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 20px;  }
+.work .card-box{ box-shadow: 0px 10px 5px rgba(0,0,0,0.1); -webkit-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -moz-box-shadow:0px 10px 5px rgba(0,0,0,0.1); -ms-box-shadow:0px 10px 5px rgba(0,0,0,0.1); display: inline-block; margin-bottom: 20px;  }
 .work a{ display: inline-block; }
 .work a:hover{ text-decoration: none; }
 .work h4{ text-align: center; margin: 0 }
 
 /*footer-css*/
-footer .bg{ padding: 80px 0 }
+footer .bg{ padding: 100px 0 }
 footer h5{ margin-bottom: 5px }
 footer a{ font-family: 'AvenirNext-DemiBold'; color: #283c86; display: inline-block; }
 footer a:hover{ text-decoration: none; color: #283c86}
-footer .space{ margin-bottom: 50px; max-width: 450px }
+footer .space{ margin-bottom: 80px; max-width: 450px }
 footer .social-icons a{ margin-right: 10px }
 footer .social-icons a:last-child{ padding-right: 0 }
 footer .resume{ float: left; }
 footer .mail{ float: right; }
+
+/* fix-button*/
+/*#fixedbutton { position: fixed;bottom: 0px; right: 0px; }*/
+
+#button{ background: linear-gradient(#283c86,#45a247); display: inline-block; width: 50px; height: 50px; text-align: center; border-radius: 100%; position: fixed; bottom: 30px; right: 30px; transition: background-color .3s; opacity: .5s; visibility: .5s; opacity: 0; visibility: hidden; z-index: 1000 }
+#button::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 25px; line-height: 50px; color: #fff;}
+#button:hover { cursor: pointer; }
+#button.show { opacity: 1; visibility: visible;}
+

@@ -11,21 +11,36 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" href="js/general.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/media.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+   <script type="text/javascript" src="js/general.js"></script>
 </head>
 <body>
-    <header class="container clearfix">
+    <header>
+      <div class="desktop-menu container clearfix">
     		<div class="pull-left logo">
     			<a href="#" title="logo"><img src="images/logo.png"></a>
     		</div>
-    		<div class="pull-right menu">
+    		<div class="pull-right menu hidden-xs">
     			<ul class="menu-link">
-                    <li><a href="#" title="ABOUT ME">About Me</a></li>
-                    <li><a href="#" title="SKILLS & EXPERIENCE">Skills & Experience</a></li>
-                    <li><a href="#" title="MY WORKS">My Works</a></li>
-                    <li><a href="#" title="CONTACT">Contact</a></li>
+                    <li><a href="#about" title="ABOUT ME">About Me</a></li>
+                    <li><a href="#skills" title="SKILLS & EXPERIENCE">Skills & Experience</a></li>
+                    <li><a href="#work" title="MY WORKS">My Works</a></li>
+                    <li><a href="#contact" title="CONTACT">Contact</a></li>
                 </ul>
     		</div>
+        <div class="mobile-menu visible-xs">
+          <a href="#" title="menu" class="open-menu"><img src="images/menu.png" alt="menu"></a>
+          <a href="#" title="menu" class="close-menu"><img src="images/close.png" alt="close"></a>
+            <ul class="menu-link">
+                <li><a href="#about" title="ABOUT ME">About Me</a></li>
+                <li><a href="#skills" title="SKILLS & EXPERIENCE">Skills & Experience</a></li>
+                <li><a href="#work" title="MY WORKS">My Works</a></li>
+                <li><a href="#contact" title="CONTACT">Contact</a></li>
+            </ul>  
+        </div>
+        </div>
+
     </header>
     <main>
     	<div class="banner">
@@ -35,23 +50,26 @@
             			<h4>Hello!</h4>
                         <h1>I'am Ankita<em></em></h1>
                         <p>I'am UI/UX designer helping mordern businesses to design something awsome.</p>
-                        <a href="#" title="RESUME" class="blue-btn">RESUME</a>
-                        <a href="#" title="CONTACT" class="border-btn">CONTACT</a>
+                        <a href="files/Ankita_Resume-latest.pdf" target="_blank" title="RESUME" class="blue-btn">RESUME</a>
+                        <a href="#contact" title="HIRE ME" class="border-btn">HIRE ME</a>
                     </div>
             	</div>
             </div>    
-        </div>
-       <div class="about container">
-       	<h2>About Me<em></em></h2>
-       	<div class="profile-img row clearfix">
-       		<div class="col-sm-6">
+      </div>
+      
+      <div class="about container" id="about">
+        	<h2>About Me<em></em></h2>
+        	<div class="profile-img row clearfix">
+       		<div class="col-lg-6 col-md-12 about-data">
        			<div class="space">
-       			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-       			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-       				
+       			<p>My name is Ankita. I live in Ahmedabad City. Each and Every day i really want to learn something new. It's fill my soul with peace and happiness. Becuase of that reason i really love to travel around the world. </p>
+       			<p>I think so travel is the ideal place to test yourself. It pushes people to their limits and gets them outside from their comfort zone. I want to experience something unfamiliar and leave with new skills or knowledge.</p>
+       			<p>When it's come to professional life 'Honesty, Loyalty and Kindness' these three factors are very much important for me. According to me these three factors are the key of Success. It resemble in your work life as well. As Someone said that "Be Kind to yourself than and than you can be kind to others." That's what i believe.</p>
+       			<a href="files/Ankita_Resume-latest.pdf" target="_blank" title="RESUME" class="blue-btn">RESUME</a>
+                <a href="#contact" title="HIRE ME" class="border-btn">HIRE ME</a>	
        			</div>
        		</div>
-       		<div class="col-sm-6">
+       		<div class="col-lg-6 col-md-12 picture">
        			<div class="first-column">
        			<div class="first-img">
        				<img src="images/exchange-place.png" alt="exchange-place">
@@ -66,15 +84,14 @@
        			</div>
        		</div>
        		</div>
-       	</div>
-       
-    
-       </div>
-       <div class="skills">
+        	</div>
+      </div>
+       <div class="skills" id="skills">
          <div class="bg">
+          <div class="container">
            <h2>Skills & Experience<em></em></h2>
            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-           <div class="list container">
+           <div class="list">
             <div class="skills-list">
             <h3>Skills:</h3>
              <ul>
@@ -93,58 +110,60 @@
             </div>
             <div class="experience-list">
             <h3>Experience:</h3>
-             <a href="#" title="tatvasoft"><img src="images/tatva-logo.png"></a>
-             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+             <a href="https://www.tatvasoft.com/" title="Tatvasoft" target="_new"><img src="images/tatva-logo.png"></a>
+             <p>I worked with Tatvasoft for 2 years as UI/UX developer. It was an amazing and memorable experience to work with this company.</p>
             </div>
 
            </div>
          </div>
        </div>
-       <div class="work container">
+       </div>
+       <div class="work container" id="work">
          <h2>My Works<em></em></h2>
-         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         <p>Here are some of my demo works of Web, Tablet and Mobile Designs.</p>
          <div class="row">
-           <div class="col-sm-5">
-             <a href="#" title="Web Designs" class="card"><img src="images/web.png" alt="web"></a>
-             <a href="#" title="Web Designs"><h4>Web Designs</h4></a>
+           <div class="col-md-5 col-xs-12">
+             <a href="https://dribbble.com/ansh1611" target="_new" title="Web Designs" class="card-box"><img src="images/web.png" alt="web"></a>
+             <a href="https://dribbble.com/ansh1611" target="_new" title="Web Designs"><h4>Web Designs</h4></a>
            </div>
-           <div class="col-sm-4">
-             <a href="#" title="Tablet Designs" class="card"><img src="images/tablet.png" alt="tablet"></a>
-             <a href="#" title="Tablet Designs"><h4>Tablet Designs</h4></a>
+           <div class="col-md-4 col-xs-12">
+             <a href="https://dribbble.com/ansh1611" target="_new" title="Tablet Designs" class="card-box"><img src="images/tablet.png" alt="tablet"></a>
+             <a href="https://dribbble.com/ansh1611" target="_new" title="Tablet Designs"><h4>Tablet Designs</h4></a>
            </div>
-           <div class="col-sm-3">
-             <a href="#" title="Mobile Designs" class="card"><img src="images/mobile.png" alt="mobile"></a>
-             <a href="#" title="Mobile Designs"><h4>Mobile Designs</h4></a>                          
+           <div class="col-md-3 col-xs-12">
+             <a href="https://dribbble.com/ansh1611" target="_new" title="Mobile Designs" class="card-box"><img src="images/mobile.png" alt="mobile"></a>
+             <a href="https://dribbble.com/ansh1611" target="_new" title="Mobile Designs"><h4>Mobile Designs</h4></a>                          
            </div>
          </div>
        </div>
     </main>
-    <footer>
+    <footer id="contact">
       <div class="bg">
         <div class="container clearfix">
          <h2>Thank You<em></em></h2>
           <div class="resume">
             <p class="space">Thank you for reaching the bottom of this page. If you want to learn more about me or what i'm working on, you can follow me on social media channels.</p>
             <h5>You can also download my CV from bottom link.</h5>
-            <a href="#" title="Resume">Resume</a>
+            <a href="files/Ankita_Resume-latest.pdf" target="_blank" title="Resume">Resume</a>
           </div>
           <div class="mail">
           	<div class="space">
           		
             <h5>Lets stay in touch</h5>
-            <a href="#" title="Mail">ansh160618@gmail.com</a>
+            <a href="mailto:ankitaythakkar@gmail.com" title="Mail">ankitaythakkar@gmail.com</a>
           	</div>
             <h5>Follow me here</h5>
             <div class="social-icons">
-            <a href="#" title="Linkedin"><img src="images/linkedin.png"></a>
-            <a href="#" title="Instagram"><img src="images/instagram.png"></a>
-            <a href="#" title="Gmail"><img src="images/gmail.png"></a>
-            <a href="#" title="Dribble"><img src="images/dribble.png"></a>
+            <a href="https://www.linkedin.com/in/ankitaythakkar" title="Linkedin" target="_blank"><img src="images/linkedin.png"></a>
+            <a href="https://instagram.com/ankita0608" title="Instagram" target="_blank"><img src="images/instagram.png"></a>
+            <a href="mailto:ankitaythakkar@gmail.com" title="Gmail"><img src="images/gmail.png"></a>
+            <a href="https://dribbble.com/ansh1611" title="Dribble" target="_blank"><img src="images/dribble.png"></a>
             </div>
           </div>
       </div>
       </div>
     </footer>
     
+ <a id="button"></a>
 </body>
 </html>

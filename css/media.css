@@ -1,0 +1,75 @@
+@media (max-width: 1199px) {
+h1{ font-size: 32px; line-height: 36px; margin-bottom: 10px }
+h2{ font-size: 24px; line-height: 26px; margin-bottom: 10px }
+h3{ font-size: 20px; line-height: 24px; margin-bottom: 10px }
+h4{ font-size: 16px; line-height: 20px; margin-bottom: 10px }
+
+/* about-css */
+.about .first-img, .about .second-img, .about .third-img {width: 220px;}
+}
+
+@media(max-width: 1024px) {
+
+/* banner-css */	
+.banner .banner-img{ background: url('../images/tablet-banner.png'); background-repeat: no-repeat; background-size: cover; background-position: 100% center}
+}
+
+@media (max-width: 991px) {
+p{ font-size: 12px; } 
+
+/* about-css */
+.about .first-img, .about .second-img, .about .third-img { width: auto; }
+.about .space{ max-width: 100%;}
+.about .about-data{ margin-bottom: 30px }
+.about .about-data, .about .picture{ display: block; }
+.about,.work,.bg{ padding: 40px 0 }
+
+/* skills-css */
+.skills p, .work p{ margin: 0 auto 20px;}
+}
+
+@media(max-width: 767px){
+
+.hidden-xs{ display: none; }
+.visible-xs{ display: inline-block; }
+.mobile-menu{ display: flex; align-items: center; justify-content: flex-start; height: 100%; float: right; }
+.mobile-menu a{ width: 20px }
+
+/* banner-css */	
+.banner{ height: 350px }
+
+/* about-css */
+.about .first-column{ display: block; margin-right: 0; margin-bottom: 20px }
+.about .second-column{ display: block; }
+
+/* work-css */
+.work .card-box{ display: block; }
+.work .row div{ margin-bottom: 20px }
+.work .row div:last-child{ margin-bottom: 0px }
+
+/* skills-css */
+.skills .list .experience-list, .skills .list .experience-list h3{ display: inline-block; }
+.skills .list .experience-list a{ display: inline-block; margin-bottom: 20px }
+.skills .list .experience-list p{ margin: 0; text-align: center; }
+
+/* footer-css*/
+footer .mail, footer .resume{ float: none; }
+footer .space{ margin-bottom: 30px; max-width: 100% }
+footer .resume{ margin-bottom: 20px }
+footer .bg{ padding: 50px 0 }
+}
+
+@media(max-width: 667px){
+.container{ max-width: 475px; padding-left: 15px; padding-right: 15px }
+
+/* skills-css */
+.skills .list .experience-list a{ width: 160px; padding: 5px 15px }
+.skills ul li{ min-width: auto; padding: 5px 15px; margin-right: 5px }
+
+/* banner-css */	
+.banner .banner-text{ padding: 30px }
+.banner a{ font-size: 12px; line-height: 16px; padding: 5px 28px; margin-right: 8px }
+
+/* about-css */	
+.about a{ font-size: 12px; line-height: 16px; padding: 5px 40px; margin-right: 12px }
+}
