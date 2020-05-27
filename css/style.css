@@ -78,14 +78,13 @@ footer h5{ margin-bottom: 5px }
 footer a{ font-family: 'AvenirNext-DemiBold'; color: #283c86; display: inline-block; }
 footer a:hover{ text-decoration: none; color: #283c86}
 footer .space{ margin-bottom: 80px; max-width: 450px }
-footer .social-icons a{ margin-right: 10px }
+footer .social-icons a{ margin-right: 10px;}
 footer .social-icons a:last-child{ padding-right: 0 }
+footer .social-icons a i{ font-size: 30px }
 footer .resume{ float: left; }
 footer .mail{ float: right; }
 
 /* fix-button*/
-/*#fixedbutton { position: fixed;bottom: 0px; right: 0px; }*/
-
 #button{ background: linear-gradient(#283c86,#45a247); display: inline-block; width: 50px; height: 50px; text-align: center; border-radius: 100%; position: fixed; bottom: 30px; right: 30px; transition: background-color .3s; opacity: .5s; visibility: .5s; opacity: 0; visibility: hidden; z-index: 1000 }
 #button::after { content: "\f077"; font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: 25px; line-height: 50px; color: #fff;}
 #button:hover { cursor: pointer; }
